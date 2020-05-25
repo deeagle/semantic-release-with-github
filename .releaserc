@@ -1,7 +1,6 @@
 {
   "branch": "master",
   "debug": "true",
-  "dryRun": "true",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -10,6 +9,12 @@
       {
         "changelogFile": "CHANGELOG.md",
         "changelogTitle": "# Semantic Versioning Changelog"
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "echo ${nextRelease.version}"
       }
     ],
     [
