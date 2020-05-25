@@ -47,10 +47,10 @@ jobs:
           tools: composer
 
       - name: Composer stuff
-        run: composer install --no-interaction --no-ansi --no-progress --working-dir  =.
+        run: composer install --no-interaction --no-ansi --no-progress --working-dir=.
 
       - name: Check version of phpunit
-        run: phpunit --version
+        run: ./vendor/bin/phpunit --version
 
       - name: Run test
         run: ./vendor/bin/phpunit tests/*.php
