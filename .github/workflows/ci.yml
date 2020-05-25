@@ -70,7 +70,7 @@ jobs:
       - name: Install dependencies
         run: npm install @semantic-release/changelog @semantic-release/git @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec @semantic-release/git semantic-release/release-notes-generator
 
-      - name: Release
+      - name: Release (Dry-Run)
         run: npx semantic-release -d
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
