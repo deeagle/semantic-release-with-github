@@ -54,3 +54,23 @@ jobs:
 
       - name: Run test
         run: ./vendor/bin/phpunit tests/*.php
+
+  semantic:
+    name: Semantic-Release-Check
+    runs-on: ubuntu-latest
+      steps:
+          - name: Checkout code
+            uses: actions/checkout@master
+
+              - name: Setup Nodejs
+                uses: actions/setup-node@v1
+                with:
+                  node-version: "12"
+
+              - name: Install dependencies
+                run: npm ci
+
+              - name: Release
+                run: npx semantic-release -d
+                env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
