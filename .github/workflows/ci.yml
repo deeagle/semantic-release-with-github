@@ -44,9 +44,10 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 7.4
+          tools: composer, phpunit
 
       - name: Composer stuff
-        run: ./tools/composer install --no-interaction --no-ansi --no-progress --working-directory=.
+        run: composer install --no-interaction --no-ansi --no-progress --working-directory=.
 
       - name: Check version of phpunit
         run: phpunit --version
