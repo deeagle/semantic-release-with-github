@@ -45,5 +45,8 @@ jobs:
         with:
           php-version: 7.4
 
-      - name: Check phpversion
+      - name: Check version of phpunit
         run: phpunit --version
+
+      - name: Run test
+        run: phpunit tests/*.php
