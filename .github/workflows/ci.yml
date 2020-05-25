@@ -45,6 +45,9 @@ jobs:
         with:
           php-version: 7.4
 
+      - name: Composer stuff
+        run: ./tools/composer install --no-interaction --no-ansi --no-progress --working-directory=.
+
       - name: Check version of phpunit
         run: phpunit --version
 
