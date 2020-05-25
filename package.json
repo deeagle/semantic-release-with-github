@@ -1,8 +1,5 @@
 {
   "name": "semantic-release-with-github",
   "version": "0.0.0-development",
-  "repository": "https://github.com/deeagle/semantic-release-with-github",
-  "devDependencies": {
-    "semantic-release": "^17.0.4"
-  }
+  "repository": "https://github.com/deeagle/semantic-release-with-github"
 }
