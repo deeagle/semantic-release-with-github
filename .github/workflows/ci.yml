@@ -32,3 +32,18 @@ jobs:
       - name: Check files are UTF8 only
         run:
           (find . -maxdepth 1 -name "*.*" -not -type d -exec isutf8 "{}" "+")
+
+  phpunit:
+    name: PHPUnit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+
+      - name: Check phpversion
+        run: phpunit --version
