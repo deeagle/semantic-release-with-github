@@ -1,5 +1,7 @@
 # Semantic version release manager
 
+[![CI](https://github.com/deeagle/semantic-release-with-github/workflows/CI/badge.svg)](https://github.com/deeagle/semantic-release-with-github/actions?query=workflow:CI+branch:master)
+
 It's a test repo to get the semantic-release manager into github-actions.
 
 Semantic-release is a nodejs tool and I want to see it working with a non-js language in ci.
