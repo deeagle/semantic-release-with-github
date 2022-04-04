@@ -1,6 +1,8 @@
 # Semantic version release manager
 
 [![CI](https://github.com/deeagle/semantic-release-with-github/workflows/CI/badge.svg)](https://github.com/deeagle/semantic-release-with-github/actions?query=workflow:CI+branch:master)
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+
 
 It's a test repo to get the semantic-release manager into github-actions.
 
