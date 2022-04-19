@@ -16,7 +16,25 @@ Semantic-release is a nodejs tool and I want to see it working with a non-js lan
     - for further details see: [semantic-release/commit-analyzer](https://github.com/semantic-release/commit-analyzer/).
   - NodeJS
     - The nodejs stuff (like package installs) is in the workflows file and nobody have to install it locally. :)
-    - The workflow token `GITHUB_TOKEN` will be filled by github (it's a present and default ;)) 
+    - The workflow token `GITHUB_TOKEN` will be filled by github (it's a present and default ;))
+
+## Deficits
+
+The plugin has problems outputting the current and next version number outside
+the release. There are many possible workarounds, as the developers probably
+see it differently (see [project issue](https://github.com/semantic-release/semantic-release/issues/753)]. 
+It is also very good that under Github the pull request is the standard, which of course is not supported 
+by the software (see [Action](https://github.com/deeagle/semantic-release-with-github/runs/6076484877?check_suite_focus=true)).
+
+```bash
+...
+[10:46:49 AM] [semantic-release] › ℹ  This run was triggered by a pull request and therefore a new version won't be published.
+```
+
+Why could it be useful?
+The version tag would be useful for me to automatically build containers after release with different tags, for example.
+This should be possible, but has to be tested unattractively with a new project.
+
 
 ## Docker-Compose and PHP code
 - It's only a demo project and includes some tests, especially for the CI.
