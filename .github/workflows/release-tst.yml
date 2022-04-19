@@ -29,3 +29,6 @@ jobs:
         run: npx semantic-release -d
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Print Version
+        run: echo .VERSION
