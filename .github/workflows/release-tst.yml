@@ -31,7 +31,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Print Version
-        run: echo .VERSION
+        run: |
+          echo "bla bla bla"
+          echo .VERSION
 
       - name: Next level
         run: | 
