@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.0.2](https://github.com/deeagle/semantic-release-with-github/compare/v1.0.1...v1.0.2) (2022-06-24)
+
+
+### Bug Fixes
+
+* remove file for build type test ([368f661](https://github.com/deeagle/semantic-release-with-github/commit/368f6616478583bfe8eaf4f7bd0b2e76b6ad1021))
+
 ## [1.0.1](https://github.com/deeagle/semantic-release-with-github/compare/v1.0.0...v1.0.1) (2020-05-25)
 
 
