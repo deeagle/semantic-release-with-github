@@ -33,6 +33,20 @@ jobs:
         run:
           (find . -maxdepth 1 -name "*.*" -not -type d -exec isutf8 "{}" "+")
 
+  lint-readme:
+    name: Lint readme file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Lint readme file
+        uses: avto-dev/markdown-lint@v1
+        with:
+          args: '*.md'
+          ignore: 'CHANGELOG.md'
+
+
   phpunit:
     name: PHPUnit
     runs-on: ubuntu-latest
