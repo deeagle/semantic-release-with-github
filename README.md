@@ -31,11 +31,13 @@ see it differently (see [project issue](https://github.com/semantic-release/sema
 It is also very good that under Github the pull request is the standard, which
 of course is not supported by the software (see [Action](https://github.com/deeagle/semantic-release-with-github/runs/6076484877?check_suite_focus=true)).
 
+<!-- markdownlint-disable MD013 -->
 ```bash
 ...
 [10:46:49 AM] [semantic-release] › ℹ  This run was triggered by a pull request and therefore a new version won't be published.
 ...
 ```
+<!-- markdownlint-enable MD013 -->
 
 Why could it be useful?
 The version tag would be useful for me to automatically build containers
